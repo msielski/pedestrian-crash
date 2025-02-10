@@ -34,7 +34,7 @@ def show_canvas(app):
 
 # Load roads for given municipality name.
 def load_municipality_roads(muni_name):
-    path = "./Tran_road_NG911.shp/Tran_road.shp"
+    path = "./data/Tran_road_NG911.shp/Tran_road.shp"
     all_roads_layer = QgsVectorLayer(path, "all_roads", "ogr")
     if not all_roads_layer.isValid():
         print("Layer failed to load - did you run install.sh first?")
