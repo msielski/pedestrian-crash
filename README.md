@@ -2,13 +2,22 @@
 
 Work in progress.  Testing moving ArcGIS code to QGIS.
 
-To run on MacOS, at terminal from project directory:
+## Install
+
+Testing on MacOS Sonoma only so far.
+
+Install latest QGIS from https://qgis.org/download/.
+
+In project directory at terminal run install.sh to download Roads GIS data.
+
+## Run
+
+Run the following, replace Metuchen with any New Jersey municiaplity name.  Enclose in quotes if containing spaces, like "Red Bank".
 
 ```
 export PROJ_LIB="/Applications/QGIS.app/Contents/Resources/proj"
+
 /Applications/QGIS.app/Contents/MacOS/bin/python3 test.py Metuchen
-or
-/Applications/QGIS.app/Contents/MacOS/bin/python3 test.py "Red Bank"
 ```
 
 ## License
